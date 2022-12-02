@@ -202,6 +202,9 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
   }
+  .images:hover {
+    transition: transform .5s ease;
+  }
 }
   /* .images {
     display: grid;
