@@ -1,15 +1,275 @@
+body {
+  font-family: "Rockwell";
+  background-image: url(../images/background-images/IMG_1437.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
 .skip{
-    position: absolute;
-    left: -9999px;
-    z-index: 999;
-    padding: 1em;
-    background-color: black;
-    color: white;
-    opacity: 0;
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+.skip:focus {
+  left: 50%; 
+  transform: translateX(-50%);
+  opacity: 1;
+}     
+.active {
+  border: solid 2px black;
+}
+@media screen and (min-width:400px) {
+  header h1{
+    text-align: center;
+    background-color: #1c448e;
+    color: #efca08;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid#d4af37;
+    border-radius: 5px;
+    margin: 10px;
   }
-  
-  .skip:focus {
-    left: 50%; 
-    transform: translateX(-50%);
-    opacity: 1;
-  }         
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c448e;
+    margin-bottom: 20px
+    ;
+    /* position: fixed;
+    top: 0;
+    width: 100%; 
+    ^use what's above if you want a fixed navigation bar*/
+  }
+  li {
+    float: left;
+  }
+  li a {
+    font-weight: bold; 
+    display: block;
+    color: #efca08;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+ h2{
+    text-align: center;
+    color: aliceblue;
+    font-weight: normal;
+    font-size: larger;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+
+  form {
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #1c448e;
+    color: #efca08;
+    margin: 0 auto;
+  }
+  legend {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+  input {
+    width: 60%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    /* display: inline-block; */
+  }
+  textarea {
+    height: 80px;
+    width: 200px;
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  input[type=submit] {
+    font-family: "Rockwell";
+    margin-top: 30px;
+    margin-left: 20%;
+    background-color: #efca08;
+  }
+  input[type=submit]:hover {
+    background-color: rgb(233, 180, 76);
+    }
+  }
+  /* .icons {
+    background-color: rgba(255, 255, 255, 0.5);
+  } */
+  .icons h2{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+  .icons img{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 span 3;
+    grid-gap: 50px; */
+    width: 100px;
+    height: 100px;
+    /* grid-column: 1 span 3; */
+  }
+  .instagram {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .tiktok {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .youtube {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+@media screen and (min-width:715px) {
+  header h1 {
+    font-size: 30px;
+    padding: 15px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  li a {
+    display: block;
+    color: #efca08;
+    padding: 20px 40px 20px 40px;
+    /* text-decoration: none; */
+    font-weight: bold;
+  }
+  legend {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: larger;
+    font-weight: lighter;
+  }
+  label[for="name_id"], label[for="email_id"]{
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+  label[for="msg"] {
+    padding-top: 10px;
+    padding-left: 10px;
+    /* margin-left: 20px; */
+  }
+  input {
+    width: 60%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    /* display: inline-block; */
+  }
+  textarea {
+    height: 80px;
+    width: 60%;
+    padding: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  input[type=submit] {
+    font-family: "Rockwell";
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20%;
+    background-color: #efca08;
+  }
+  input[type=submit]:hover {
+    background-color: rgb(233, 180, 76);
+  }
+}
+@media screen and (min-width: 1025px){
+  header h1 {
+    font-size: 35px;
+  }
+  li a{
+    font-size: 20px;
+  }
+  h2 {
+    padding: 30px;
+  }
+  legend {
+    font-size: 20px;
+  }
+  label {
+    font-size: 17px;
+  }
+  label[for="msg"] {
+    padding-left: 10px;
+  }
+}
+/* 
+  h1{
+    text-align: center;
+    background-color: blue;
+    color: yellow;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .icons {
+    display: grid;
+    justify-content: stretch;
+  }
+  .icons img{
+    width: 100px;
+    height: 100px;
+} */

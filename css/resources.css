@@ -1,15 +1,212 @@
+body {
+  font-family: "Rockwell";
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/team-gallery/5Y4A6049.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
 .skip{
-    position: absolute;
-    left: -9999px;
-    z-index: 999;
-    padding: 1em;
-    background-color: black;
-    color: white;
-    opacity: 0;
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+.skip:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}  
+.active {
+  border: solid 2px black;
+}
+@media screen and (min-width:400px) {
+  header h1{
+    text-align: center;
+    background-color: #1c448e;
+    color: #efca08;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid#d4af37;
+    border-radius: 5px;
+    margin: 10px;
   }
-  
-  .skip:focus {
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 1;
-  }         
+  .content h1{
+    text-align: center;
+    background-color: #1c448e;
+    color: #d4af37;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid#d4af37;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c448e;
+    margin-bottom: 20px
+    ;
+    /* position: fixed;
+    top: 0;
+    width: 100%; 
+    ^use what's above if you want a fixed navigation bar*/
+  }
+  li {
+    float: left;
+  }
+  li a {
+    font-weight: bold;
+    display: block;
+    color: #efca08;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #29335c;
+    text-decoration: underline;
+  }
+  .coaching h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    margin: 0px;
+    border: transparent;
+    border-radius: 0px;
+  }
+  .content h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    margin: 0px;
+    border: transparent;
+    border-radius: 0px;
+    padding: 10px 0px 10px 0px;
+  }
+  .right h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color:  rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .left{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .column img{
+    width: 300px;
+    border: grey solid 1px;
+    border-radius: 5px;
+  }
+  .facilities-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .facilities-column img{
+    width: 300px;
+    border: grey solid 1px;
+    border-radius: 5px;
+  }
+  p {
+    text-align: left;
+    padding: 10px;
+    margin: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+  }
+}
+
+@media screen and (min-width:715px) {
+  /* body {
+    background-image: url(../images/team-gallery/5Y4A6049.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  } */
+  header h1 {
+    font-size: 30px;
+    padding: 15px;
+  }
+  li a {
+    display: block;
+    color: #efca08;
+    padding: 20px 40px 20px 40px;
+    text-decoration: none;
+  }
+  .coaching h1 {
+    font-weight: normal;
+    font-size: 25px;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .column {
+    flex-direction: row;
+  }
+  .column img {
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .facilities-column {
+    display: flex;
+    flex-direction: row;
+  }
+  .facilities-column img {
+    width: 175px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1025px){
+  header h1 {
+    font-size: 35px;
+  }
+  li a{
+    font-size: 20px;
+  }
+  .coaching h1 {
+    font-size: 30px;
+  }
+  .content h1 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .right h2 {
+    font-size: 20px;
+  }
+  p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .column img {
+    width: 400px;
+  }
+  /* .facilities-column {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  } */
+  .facilities-column img{
+    width: 25%;
+    object-fit: cover;
+  }
+}
