@@ -20,62 +20,43 @@
 	</header>
 <main id="main">
 	<h2>Interest in joining the team? Have any questions? Fill out the form below</h2>
-	<form action="https://formspree.io/f/xrgdwrad" method="POST" enctype="text/plain">
-		<fieldset>
-		  <legend>Contact Us</legend>
-		  <label for="name_id">Your Name</label>
-		  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+	<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrgdwrad" method="post">
+		<fieldset id="fs-frm-inputs">
+		<legend>Contact Us</legend>
+		  <label for="name">Name</label>
+		  <input type="text" name="name" id="name" placeholder="First and Last" required="">
 		  <br>
-		  <label for="email_id">Your Email</label>
-		  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+		  <label for="email-address">Email</label>
+		  <input type="email" name="_replyto" id="email-address" placeholder="johnsmith@example.com" required="">
 		  <br>
-		  <label for="msg">Leave A Message</label>
+		  <label for="message">Message</label>
 		  <br>
-		  <textarea id = "msg" name="mesg" required></textarea><br>
-		  <br>
-		  <input type="submit" value = "Submit" name="submit"> 
-		  <!-- <form action="https://formspree.io/f/xrgdwrad"
-		  method="POST">
-		  <label> Your email:
-			<input type="email" name="email">
-		</label>
-		<label>
-		Your message:
-			<textarea name="message"></textarea>
-		</label> -->
-  <!-- your other form fields go here -->
-</form>
+		  <textarea rows="5" name="message" id="message" placeholder="Questions? Comments? Concerns?" required=""></textarea>
+		  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+		</fieldset>
+		<input type="submit" value="Submit">
+	  </form>
 		</fieldset>
 	   </form>
 	<div class="icons">
 		<h2>Find us on social media!</h2>
-		<!-- look up how to use image icons for hyperlinks -->
-		<!-- <div class="icons"></div> -->
 			<div class = instagram>
-				<a href="https://www.instagram.com/umichweightlifting/?hl=en" aria-label="Team Instagram page">
+				<a href="https://www.instagram.com/umichweightlifting/?hl=en" aria-label="Team Instagram page"></a>
 				<img alt="instagram.com/umichweightlifting" src="./images/social-media-icons/iconmonstr-instagram-11.svg">
 			</div>
 			<div class="tiktok">
-				<a href="https://www.tiktok.com/@umichweightlifting" aria-label="Team TikTok page">
+				<a href="https://www.tiktok.com/@umichweightlifting" aria-label="Team TikTok page"></a>
 				<img alt="tiktok.com/@umichweightlifting" src="./images/social-media-icons/tiktok-icon.svg">
 			</div>
 			<div class="youtube">
-				<a href="https://www.youtube.com/channel/UCo4HQC-M5Y0RiH0DKxHl7Rg" aria-label="Team YouTube channel">
-				<img alt="youtube.com/channel/UCo4HQC-M5Y0RiH0DKxHl7Rg" src="./images/social-media-icons/YouTube-Icon-Almost-Black-Logo.wine.svg">
-			<!-- </div> -->
-		</div>
+				<a href="https://www.youtube.com/channel/UCo4HQC-M5Y0RiH0DKxHl7Rg" aria-label="Team YouTube channel/">
+				<img alt="youtube.com/channel/UCo4HQC-M5Y0RiH0DKxHl7Rg" src="./images/social-media-icons/YouTube-Icon-Almost-Black-Logo.wine.svg"></a>
+			</div>
 	</div>
-	<!-- <div class="dropdown">
-		<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-		<div id="myDropdown" class="dropdown-content">
-			<a href="https://www.instagram.com/umichweightlifting/?hl=en" aria-label="Team Instagram page">
-			<img alt="instagram.com/umichweightlifting" src="../images/social-media-icons/iconmonstr-instagram-11.svg">
-			<a href="https://www.tiktok.com/@umichweightlifting" aria-label="Team TikTok page">
-			<img alt="tiktok.com/@umichweightlifting" src="../images/social-media-icons/tiktok-icon.svg">
-			<a href="https://www.youtube.com/channel/UCo4HQC-M5Y0RiH0DKxHl7Rg" aria-label="Team YouTube channel">
-			<img alt="youtube.com/channel/UCo4HQC-M5Y0RiH0DKxHl7Rg" src="../images/social-media-icons/YouTube-Icon-Almost-Black-Logo.wine.svg">
-		</div>
-	  </div> -->
-	  
 </main>
+<footer>
+	University of Michigan School of Information
+	<br>
+	© Zack Kirsner 2022
+</footer>
 </body>
