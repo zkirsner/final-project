@@ -98,10 +98,6 @@ footer {
     background-color: #1c448e;
     margin-bottom: 20px
     ;
-    /* position: fixed;
-    top: 0;
-    width: 100%; 
-    ^use what's above if you want a fixed navigation bar*/
   }
   li {
     float: left;
@@ -151,7 +147,6 @@ footer {
     margin-top: 8px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    /* display: inline-block; */
   }
   textarea {
     height: 80px;
@@ -188,21 +183,13 @@ footer {
     transition: 1s ease;
   }
   }
-  /* .icons {
-    background-color: rgba(255, 255, 255, 0.5);
-  } */
   .icons h2{
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
   }
   .icons img{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column: 1 span 3;
-    grid-gap: 50px; */
     width: 100px;
     height: 100px;
-    /* grid-column: 1 span 3; */
   }
   .instagram {
     padding-top: 10px;
@@ -240,7 +227,6 @@ footer {
     display: block;
     color: #efca08;
     padding: 20px 40px 20px 40px;
-    /* text-decoration: none; */
     font-weight: bold;
   }
   legend {
@@ -259,7 +245,6 @@ footer {
   label[for="msg"] {
     padding-top: 10px;
     padding-left: 10px;
-    /* margin-left: 20px; */
   }
   input {
     width: 60%;
@@ -267,7 +252,6 @@ footer {
     margin-top: 8px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    /* display: inline-block; */
   }
   textarea {
     height: 80px;

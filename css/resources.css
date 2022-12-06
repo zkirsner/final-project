@@ -106,12 +106,7 @@ header h1 {
     padding: 0;
     overflow: hidden;
     background-color: #1c448e;
-    margin-bottom: 20px
-    ;
-    /* position: fixed;
-    top: 0;
-    width: 100%; 
-    ^use what's above if you want a fixed navigation bar*/
+    margin-bottom: 20px;
   }
   li {
     float: left;
@@ -209,12 +204,6 @@ header h1 {
 }
 
 @media screen and (min-width:715px) {
-  /* body {
-    background-image: url(../images/team-gallery/5Y4A6049.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  } */
   header h1 {
     font-size: 30px;
     padding: 15px;
@@ -237,9 +226,9 @@ header h1 {
     flex-direction: row;
   }
   .column img {
-    width: 200px;
     object-fit: cover;
-    margin: 5px;
+    width: 300px;
+    margin: 10px;
   }
 
   .facilities-column {
@@ -261,7 +250,6 @@ header h1 {
   }
   li a{
     font-size: 20px;
-    padding: 50px 50px;
   }
   .coaching h1 {
     font-size: 30px;
@@ -278,8 +266,8 @@ header h1 {
     margin-right: 20%;
   }
   .column img {
-    width: 400px;
-    margin: 10px;
+    width: 250px;
+    margin: 5px;
   }
   .facilities-column {
     flex-wrap: nowrap;

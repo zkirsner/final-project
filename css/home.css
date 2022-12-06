@@ -8,10 +8,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right,#FFF200, #003B64)
-  /* background-image: url(../images/team-gallery/5Y4A6049.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 .skip{
     position: absolute;
@@ -113,12 +109,7 @@ footer {
     padding: 0;
     overflow: hidden;
     background-color: #1c448e;
-    margin-bottom: 20px
-    ;
-    /* position: fixed;
-    top: 0;
-    width: 100%; 
-    ^use what's above if you want a fixed navigation bar*/
+    margin-bottom: 20px;
   }
   li {
     float: left;
@@ -187,12 +178,8 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 5px;
-    /* padding:0px 5px 0px 5px; */
     transition: 1s ease;
   }
-  /* .grow img{
-    transition: 1s ease;
-    } */
     .images img:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -242,7 +229,6 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 5px;
-    /* padding-bottom: 10px; */
   }
 }
 
@@ -273,10 +259,3 @@ footer {
     grid-gap: 20px;
   }
 }
-  /* .images {
-    display: grid;
-    grid-gap: 100px;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 150px);
-    justify-content: center;
-  } */
